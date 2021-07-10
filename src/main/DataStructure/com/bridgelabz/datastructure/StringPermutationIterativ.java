@@ -39,7 +39,6 @@ public class StringPermutationIterativ {
 		System.out.println("Enter the string = ");
 		String s = sc.next();
 		System.out.println("All permutations of given String are ");
-
 		permutations(s);
 	}
 }
