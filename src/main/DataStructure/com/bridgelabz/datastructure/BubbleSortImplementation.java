@@ -19,13 +19,11 @@ public class BubbleSortImplementation {
 			Arrays.asList(array.get(1), array.get(0)));
 		}
 
-		// Store the first two elements
-		// of the list in variables a and b
+		
 		int firstElement = array.get(0);
 		int secondElement = array.get(1);
 
-		// Store remaining elements
-		// in the list bs
+		// Store remaining elements in the list 
 		ArrayList<Integer> secondArray = new ArrayList<>();
 		for (int i = 2; i < array.size(); i++)
 			secondArray.add(array.get(i));
@@ -34,7 +32,7 @@ public class BubbleSortImplementation {
 		// each recursive call
 		ArrayList<Integer> res = new ArrayList<>();
 
-		// If a < b
+		// If first element < second element
 		if (firstElement < secondElement) {
 		ArrayList<Integer> temp1 = new ArrayList<>();
 		temp1.add(secondElement);
@@ -46,7 +44,7 @@ public class BubbleSortImplementation {
 		res = vir;
 		}
 
-		// Otherwise, if b >= a
+		// Otherwise, if second element >= first element
 		else {
 		ArrayList<Integer> temp1 = new ArrayList<>();
 		temp1.add(firstElement);
